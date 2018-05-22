@@ -18,13 +18,13 @@ brew 'zsh-completions'
 brew 'coreutils'
 
 # Install some other useful utilities like `sponge`.
-brew  'moreutils'
+brew 'moreutils'
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew 'findutils'
 
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew 'gnu-sed', args ['with-default-names']
+brew 'gnu-sed', args: ['with-default-names']
 
 # Install Bash 4
 brew 'bash'
@@ -51,6 +51,8 @@ brew 'unar'
 brew 'wget'
 
 # Development
+# clojure depends on java, so run the java install first
+cask 'java'
 brew 'clojure'
 brew 'mongodb'
 brew 'postgresql'
@@ -65,15 +67,16 @@ brew "yarn", args: ["without-node"]
 # GUI Apps
 cask '1password'
 cask 'atom'
+cask 'codekit'
+cask 'cyberduck'
 cask 'db-browser-for-sqlite'
 cask 'dropbox'
-cask 'firefoxdeveloperedition'
+cask 'firefox-developer-edition'
 cask 'google-chrome'
 cask 'github'
 cask 'handbrake'
 cask 'imageoptim'
 cask 'iterm2'
-cask 'java'
 cask 'mamp'
 cask 'microsoft-remote-desktop-beta'
 cask 'parallels'
@@ -98,7 +101,7 @@ cask 'quicklook-json'
 cask 'quicklook-csv'
 cask 'qlstephen'
 cask 'qlprettypatch'
-cask 'betterzipql'
+cask 'betterzip'
 cask 'qlimagesize'
 cask 'webpquicklook'
 cask 'suspicious-package'
@@ -114,18 +117,3 @@ tap 'bramstein/webfonttools'
 brew 'sfnt2woff'
 brew 'sfnt2woff-zopfli'
 brew 'woff2'
-
-# # Install Mac App Store apps
-# mas '1Password', id: 443987910
-# mas 'Byword', id: 420212497
-# mas 'Deckset', id: 847496013
-# mas 'Gapplin', id: 768053424
-# mas 'Giphy Capture', id: 668208984
-# mas 'Paw', id: 584653203
-# mas 'Sip', id: 507257563
-# mas 'Spark', id: 1176895641
-# mas 'The Unarchiver', id: 425424353
-# mas 'Things', id: 904280696
-# mas 'Tweetbot', id: 1384080005
-# mas 'Unsplash Wallpapers', id: 1284863847
-# mas 'WhatsApp', id: 1147396723 
