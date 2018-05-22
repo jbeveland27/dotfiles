@@ -85,20 +85,7 @@ case "$SHELL" in
     update_shell
     ;;
 esac
-chsh -s $(which zsh)
-
-# Install PHP extensions with PECL
-#pecl install imagick
-
-# Install Composer
-#curl -sS https://getcomposer.org/installer | php
-#mv composer.phar /usr/local/bin/composer
-
-# Install global Composer packages
-#/usr/local/bin/composer global require laravel/installer laravel/lumen-installer laravel/spark-installer laravel/valet
-
-# Install Laravel Valet
-#$HOME/.composer/vendor/bin/valet install
+# chsh -s $(which zsh) think this was a typo...
 
 # Install NVM
 if [ ! -f "$HOME/.nvm/nvm.sh" ]
@@ -109,7 +96,8 @@ source ~/.nvm/nvm.sh
 nvm install --lts
 
 
-# Create Development directories
+# Create some default Development directories
+# check if the directory exists first...
 mkdir $HOME/Development
 mkdir $HOME/Development/GitHub
 mkdir $HOME/Development/Graphics

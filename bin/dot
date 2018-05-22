@@ -50,6 +50,9 @@ $ZSH/homebrew/install.sh 2>&1
 echo "› brew update"
 brew update
 
+# Upgrade any already-installed formulae.
+brew upgrade
+
 # Install software
 echo "› $ZSH/script/install"
 $ZSH/script/install
