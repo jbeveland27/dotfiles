@@ -1,6 +1,8 @@
 [user]
 	name = Justin Eveland
 	email = jbeveland27@gmail.com
+[init]
+	defaultBranch = main
 [credential]
 	helper = osxkeychain
 [core]
